@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.content {
+    margin: 300px 0;
+    padding: 0 20px;
+}
+
+.content-item {
+    opacity: 0;
+    transform: translateY(100px);
+    text-align: center;
+    margin: 300px;
+    padding: 20px;
+    max-width: 800px;
+    transition: opacity 0.6s, transform 0.6s;
+    border-bottom: 1px solid #000;
+}
+
+.content-item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.content-item p, .content-item ul {
+    font-size: 1.2rem;
+}
+
+/* Scroll-triggered animation */
+.content-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-text {
+    font-size: 0.3rem; /* 더욱 작은 글씨 크기 */
+    color: #666; /* 더 밝은 회색 글씨 색상 */
+    margin-top: 2px; /* 위와의 간격 조정 */
+    line-height: 1.5; /* 줄 간격 조정 */
+    letter-spacing: 0.3px; /* 글자 간격 조정 */
+}
+
+/* 커서 모양을 유지하고, 클릭 가능하게 설정 */
+.no-cursor {
+    text-decoration: none; /* 밑줄 제거 (선택 사항) */
+    color: inherit; /* 부모 요소의 글씨 색상 유지 */
+    cursor: default; /* 클릭 시에도 기본 커서 유지 */
+}
