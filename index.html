@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#home">YoutubeKorea</a> <!-- 로고/이름 추가 -->
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+        </ul>
+    </nav>
+    <div class="container" id="home">
         <img src="image/yuko.png" height="280" width="290"></img>
         <h1>YoutubeKorea</h1>
         <div class="social-icons">
@@ -24,16 +34,18 @@
         <div class="content-item" id="about">
             <h2>소개</h2>
             <p>안녕하세요! 유코<small>[YoutubeKorea]</a></small>라고 합니다. 평범한 학생입니다.</p>
-            <small>이름은 <a href="https://ko.namemc.com/profile/YouTubeKorea.3" class="no-cursor" target="_blank">마인크래프트 닉네임에서 가져왔다고 하네요...</small>
+            <small>이름은 <a href="https://ko.namemc.com/profile/YouTubeKorea.3" class="no-cursor" target="_blank">마인크래프트 닉네임</a>에서 가져왔다고 하네요...</small>
         </div>
         <div class="content-item" id="skills">
             <h2>사용 언어</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Node.js, Express, MongoDB</li>
+            <ul class="skill-list">
+                <li class="skills-item"></li>
+                    <img src="image/python.jpeg" height="60" width="60"></img>
+                    Python
+                </li>
             </ul>
         </div>
-        <div class="content-item" id="projects">
+<!--         <div class="content-item" id="projects">
             <h2>Projects</h2>
             <p>Here are some of the projects I have worked on recently:</p>
             <ul>
@@ -41,7 +53,7 @@
                 <li><strong>Project 2</strong> - A responsive e-commerce site.</li>
                 <li><strong>Project 3</strong> - A real-time chat application.</li>
             </ul>
-        </div>
+        </div> -->
     </div>
     <script src="js/scripts.js"></script>
 </body>
